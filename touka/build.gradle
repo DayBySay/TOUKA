@@ -18,8 +18,7 @@ uploadArchives {
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
-    publishNonDefault true
-
+    
     defaultConfig {
         minSdkVersion 23
         targetSdkVersion 23
