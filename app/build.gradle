@@ -19,11 +19,14 @@ android {
     }
 }
 
+repositories {
+    maven { url 'http://takachon.github.io/TOUKA/maven/' }
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:design:23.1.1'
-    releaseCompile project(path: ':touka', configuration: 'release')
-    debugCompile project(path: ':touka', configuration: 'debug')
+    compile 'com.example.t_sei:TOUKA:1.0.0@aar'
 }
