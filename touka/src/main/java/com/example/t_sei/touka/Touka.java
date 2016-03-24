@@ -7,9 +7,6 @@ import android.util.Log;
  */
 public class Touka {
     public static String taishio() {
-        if ( BuildConfig.DEBUG){
-            Log.d("OSA", "hosomen saiko");
-        }
         return "ochaduke mo aruyo";
     }
 }
