@@ -1,5 +1,20 @@
 apply plugin: 'com.android.library'
 
+def repo = new File(rootDir, "maven")
+
+apply plugin: 'maven'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository url: "file://${repo.absolutePath}"
+            pom.version = '1.0.0'             // version
+            pom.groupId = 'com.example.t_sei'    // グループ名
+            pom.artifactId = 'TOUKA' // ライブラリ名
+        }
+    }
+}
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
