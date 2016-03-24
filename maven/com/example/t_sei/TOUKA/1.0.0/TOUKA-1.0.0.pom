@@ -5,6 +5,7 @@
   <groupId>com.example.t_sei</groupId>
   <artifactId>TOUKA</artifactId>
   <version>1.0.0</version>
+  <packaging>aar</packaging>
   <dependencies>
     <dependency>
       <groupId>com.android.support</groupId>
